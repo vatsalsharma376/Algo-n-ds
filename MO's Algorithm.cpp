@@ -24,7 +24,7 @@ void mos(vector<int> lis,int n,int q){
 			currL++;
 		}
 		while(currL>l){
-			currS+=lis[currL]-1;
+			currS+=lis[currL-1];
 			currL--;
 		}
 		while(currR<=r){
