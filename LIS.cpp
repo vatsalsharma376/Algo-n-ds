@@ -14,11 +14,8 @@ int main() {
 	{
 		cin>>x;
 		s.insert(x);
-		it = s.find(x);
-		it++;
-		if(it!=s.end())
-			s.erase(it);
-		
+		it=s.upper_bound(x);
+		if(it!=s.end())s.erase(it);
 	}
 	cout<<s.size();
 	return 0;
