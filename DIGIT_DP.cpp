@@ -83,3 +83,25 @@ int main(){
     //fprintf(stderr, "Time: %d ms\n", (int)(clock()*1000.0/CLOCKS_PER_SEC));
     return 0;
 }
+
+
+
+//decrease a number stored as string by 1
+void decrese(){
+    int len = a.size() - 1;
+    if(a[len] != '0'){
+        a[len] = (a[len] - '0' - 1) + '0';
+    }
+    else {
+        while(true){
+            if(a[len] == '0'){
+                a[len] = '9';
+                len--;
+            }  
+            else {
+                a[len] = (a[len] - '0' - 1) + '0';
+                break;
+            }
+        }
+    }
+}
