@@ -1,15 +1,12 @@
-#include <iostream>
-#include <set>
-#include <vector>
+#include <bits/stdc++.h>
 using namespace std;
 
 int main() {
 	
 	multiset <int> s;
 	multiset<int>:: iterator it;
-	int n;
+	int n,x
 	cin>>n;
-	int x;
 	for(int i=0;i<n;i++)
 	{
 		cin>>x;
