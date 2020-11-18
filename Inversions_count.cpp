@@ -1,6 +1,8 @@
-#include <stdio.h>
-int A[1048576], X[1048576];
-long long ret = 0;
+#include <bits/stdc++.h>
+using namespace std;
+
+int A[1048576], X[1048576],ret;
+
 void merge(int l, int m, int r) {
     int idx1 = l, idx2 = m+1;
     int top = 0, i, j;
@@ -28,12 +30,12 @@ void mergeSort(int l, int r) {
 }
 int main() {
     int n, i;
-    while(scanf("%d", &n) == 1) {
+    while(cin>>n) {
         for(i = 0; i < n; i++)
-            scanf("%d", &A[i]);
+            cin>>A[i];
         ret = 0;
         mergeSort(0, n-1);
-        printf("%lld\n", ret);
+        cout<<ret;
     }
     return 0;
 }
